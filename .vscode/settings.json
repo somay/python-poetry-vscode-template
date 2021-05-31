@@ -4,5 +4,5 @@
     "python.analysis.memory.keepLibraryAst": true,
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
-    "python.pythonPath": "<automatically configured at first python selection if python.venvPath is configured>"
+    "python.pythonPath": "<automatically configured at first intepreter selection on GUI if python.venvPath is configured>"
 }
