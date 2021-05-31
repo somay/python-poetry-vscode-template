@@ -1,0 +1,43 @@
+[tool.black]
+# https://github.com/psf/black#pyprojecttoml
+line-length = 100
+
+[tool.isort]
+# isort configuration compatible with the black code formatter
+# c.f. https://github.com/psf/black/blob/master/docs/compatible_configs.md#isort
+# https://github.com/timothycrosley/isort/wiki/isort-Settings
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 100
+
+[tool.pylint.format]
+max-line-length = "100"
+
+[tool.pytest.ini_options]
+norecursedirs = [".mypy_cache", ".git", ".cache", ".coverage"]
+
+[tool.poetry]
+name = "poetry-vscode-template"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.0"
+coverage = "^5.5"
+flake8 = "^3.9.2"
+black = {version = "^21.5b1", allow-prereleases = true}
+mypy = "^0.812"
+pylint = "^2.8.2"
+rope = "^0.19.0"
+isort = "^5.8.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,0 +1,8 @@
+{
+    "python.formatting.provider": "black",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.memory.keepLibraryAst": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.pythonPath": "<automatically configured at first python selection if python.venvPath is configured>"
+}
